@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekno Mandiri</title>
+    <link rel="icon" href="img/Logo.png">
+    <title>Mini Project</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-300 via-white to-cyan-200 min-h-screen">
+
+    <!-- Header Content -->
+    <header class="flex justify-between items-center p-4 fixed top-0 left-0 right-0  bg-white shadow-md z-5">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex gap-6 mr-6">
+
+        <a href="#home-page"
+            class="px-4 py-2 rounded
+                    text-gray-700
+                    hover:bg-blue-500 hover:text-white
+                    transition duration-300">
+            Home
+        </a>
+
+        <a href="#our-profile-page"
+            class="px-4 py-2 rounded
+                    text-gray-700
+                    hover:bg-blue-500 hover:text-white
+                    transition duration-300">
+            Our Profile
+        </a>
+
+
+        <a href="#message-us-page"
+            class="px-4 py-2 rounded
+                    text-gray-700
+                    hover:bg-blue-500 hover:text-white
+                    transition duration-300">
+            Message Us
+        </a>
+
+        </nav>
+
+    </header>
+    <br><br><br>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="mx-8 mt-20 mb-10">
+
+        <div class="relative rounded-2xl overflow-hidden shadow-lg">
+
+            <!-- Background -->
+            <img src="img/building.png"
+                class="w-full h-[300px] object-cover">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/50"></div>
+
+            <!-- Text -->
+            <div class="absolute inset-0 flex flex-col justify-center px-10 text-white">
+
+            <h1 id="heroText" class="text-4xl font-bold mb-2"></h1>
+
+            <p class="text-lg animate-fadeIn">
+                Solusi Digital Cerdas untuk Mengembangkan Bisnis Anda
+            </p>
+
+            </div>
+
+        </div>
+
+        </section>
+
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-screen px-8 py-16">
+            <h2 class="text-xl font-bold text-center"></h2>
+
+        <!-- About -->
+        <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- KIRI : TEKS -->
+      <div>
+
+        <h2 class="text-3xl font-bold mb-6">
+          Tentang Kami
+        </h2>
+
+        <p class="text-black-700 mb-4 leading-relaxed">
+          Tekno Mandiri adalah perusahaan teknologi digital yang berfokus
+          pada pengembangan website, desain UI/UX, dan aplikasi web modern.
+          Didirikan pada tahun 2026, perusahaan kami berkomitmen untuk
+          menghadirkan solusi digital yang inovatif dan berkualitas tinggi
+          bagi bisnis maupun individu.
+        </p>
+
+        <p class="text-black-700 leading-relaxed">
+          Kami percaya bahwa teknologi harus mampu mendorong pertumbuhan.
+          Oleh karena itu, kami terus meningkatkan layanan, kreativitas,
+          dan keahlian teknis kami untuk memenuhi kebutuhan klien di era
+          digital yang berkembang pesat ini.
+        </p>
+
+      </div>
+
+      <!-- KANAN : GAMBAR -->
+      <div class="flex justify-center">
+
+        <img src="img/building2.png"
+             alt="Tentang Kami"
+             class="rounded-2xl shadow-lg w-full max-w-md
+                     ">
+
+      </div>
+
+    </div>
+
+  </div>
+
+        <!-- Visi Misi -->
+        <div class="mt-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="font-bold text-lg mb-2">Visi</h3>
+                    <p class="text-gray-700">Menjadi perusahaan teknologi digital yang terdepan dalam memberikan solusi inovatif dan berkualitas tinggi untuk kebutuhan bisnis dan individu di era digital.</p>
+                </div>
+                  <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="font-bold text-lg mb-2">Misi</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Mengembangkan website dan aplikasi modern berkualitas tinggi</li>
+                        <li>Mengutamakan kepuasan serta kebutuhan klien</li>
+                        <li>Berinovasi mengikuti perkembangan teknologi terbaru</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    <h2 class="text-3xl font-bold mt-10 mb-10">
+      Kantor Kami
+    </h2>
+
+    <!-- Container Card -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+         <!-- Card Semarang -->
+      <div class="bg-white rounded-2xl shadow-md p-8 text-center">
+
+        <img src="img/Semarang.webp"
+             class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+
+        <h3 class="font-bold text-lg mb-2">
+          Semarang
+        </h3>
+
+        <p class="text-gray-600">
+          Jl. De. Cipto No. 542
+        </p>
+
+        <p class="text-gray-600">
+          Telp: (024) 8976-5432
+        </p>
+      </div>
+
+      <!-- Card Bali -->
+      <div class="bg-white rounded-2xl shadow-md p-8 text-center">
+
+        <img src="img/Bali.webp"
+             class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+
+        <h3 class="font-bold text-lg mb-2">
+          Bali
+        </h3>
+
+        <p class="text-gray-600">
+          Jl. Kuta No. 123
+        </p>
+
+        <p class="text-gray-600">
+          Telp: (0361) 8765-4321
+        </p>
+      </div>
+
+      <!-- Card Lombok -->
+      <div class="bg-white rounded-2xl shadow-md p-8 text-center">
+
+        <img src="img/Lombok.webp"
+             class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+
+        <h3 class="font-bold text-lg mb-2">
+          Lombok
+        </h3>
+
+        <p class="text-gray-600">
+            Jl. Senggigi No. 789
+        </p>
+
+        <p class="text-gray-600">
+            Telp: (0370) 6543-2109
+        </p>
+      </div>
+
+    </div>
+
+</section>
+
+        <!-- Message Us Page -->
+<section id="message-us-page" class="bg-gradient-to-r from-blue-100 to-blue-300 p-10 rounded-lg mx-8 my-10">
+    <h2 class="text-2xl font-bold mb-6">Message Us</h2>
+        <div class="flex flex-col md:flex-row gap-8">
+
+            <!-- FORM KIRI -->
+            <form class="w-full md:w-1/2"
+                onsubmit="return validateForm()">
+
+                <!-- Nama -->
+                <div class="flex items-center mb-4">
+                    <label class="w-40">Nama</label>
+                    <span class="mr-2">:</span>
+                    <input id="name"
+                        type="text"
+                        class="flex-1 border p-2 rounded"
+                        placeholder="Nama">
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center mb-4">
+                    <label class="w-40">Email</label>
+                    <span class="mr-2">:</span>
+                    <input id="email"
+                        type="email"
+                        class="flex-1 border p-2 rounded"
+                        placeholder="Masukkan Email">
+                </div>
+
+
+                <!-- Tanggal Lahir -->
+                <div class="flex items-center mb-4">
+                    <label class="w-40">Tanggal Lahir</label>
+                    <span class="mr-2">:</span>
+                    <input id="birthdate"
+                        type="date"
+                        class="flex-1 border p-2 rounded">
+                </div>
+
+                <!-- Gender -->
+                <div class="flex items-center mb-4">
+                    <label class="w-40">Jenis Kelamin</label>
+                    <span class="mr-2">:</span>
+
+                    <label class="mr-4">
+                        <input type="radio"
+                            name="gender"
+                            value="Laki - Laki"
+                            checked> Laki-Laki
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            value="Perempuan"> Perempuan
+                    </label>
+                </div>
+
+        <!-- Pesan -->
+        <div class="flex items-start mb-4">
+            <label class="w-40">Pesan</label>
+            <span class="mr-2">:</span>
+            <textarea id="message"
+                      class="flex-1 border p-2 rounded h-32"
+                      placeholder="Pesan"></textarea>
+        </div>
+
+        <!-- Button -->
+        <button type="submit"
+           class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+            Submit
+        </button>
+    </form>
+
+<!-- HASIL KANAN -->
+<div id="resultBox"
+     class="w-full md:w-1/2 border p-6 min-h-[250px]">
+
+    <p class="mb-4">
+        <b>Current time :</b>
+        <span id="currentTime"></span>
+    </p>
+
+    <div id="resultData" style="display: none;">
+
+        <p><b>Nama :</b> <span id="resultName">-</span></p>
+        <p><b>Email :</b> <span id="resultEmail">-</span></p>
+        <p><b>Tanggal Lahir :</b> <span id="resultBirth">-</span></p>
+        <p><b>Jenis Kelamin :</b> <span id="resultGender">-</span></p>
+        <p><b>Pesan :</b> <span id="resultMessage">-</span></p>
+
+    </div>
+
+</div>
+    </section>
+</main>
+    <br>
+
+    <!-- Footer Content -->
+    <footer></footer>
+    <footer>
+        <p class="text-center p-4">© 2026 Tekno Mandiri. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
