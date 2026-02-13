@@ -33,8 +33,12 @@ function showTime() {
 }
 
 // FORM VALIDATION
-function validateForm() {
+function validateForm(event) {
 
+    // ❗ Cegah reload
+    event.preventDefault();
+
+    // Ambil data
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const birth = document.getElementById("birthdate").value;
@@ -45,24 +49,26 @@ function validateForm() {
             'input[name="gender"]:checked'
         ).value;
 
-    if (name === "" || birth === "" || message === "") {
-        alert("All fields must be filled!");
+    // Validasi
+    if (name === "" || email === "" || birth === "" || message === "") {
+        alert("Semua field harus diisi!");
         return false;
     }
 
-    // Tampilkan ke kotak kanan
+    // Tampilkan hasil
     document.getElementById("resultName").innerText = name;
     document.getElementById("resultEmail").innerText = email;
     document.getElementById("resultBirth").innerText = birth;
     document.getElementById("resultGender").innerText = gender;
     document.getElementById("resultMessage").innerText = message;
 
-    // 🔥 TAMBAHAN 1 — Munculkan kotak kanan
-    document.getElementById("resultBox").style.display = "block";
+    // Tampilkan data kanan
+    document.getElementById("resultData").style.display = "block";
 
-    // 🔥 TAMBAHAN 2 — Reset form
-    document.querySelector("form").reset();
+    // Reset input kiri
+    document.getElementById("messageForm").reset();
 
-    return false; // prevent reload
+    return false;
 }
+
 

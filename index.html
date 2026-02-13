@@ -220,14 +220,16 @@
 
 </section>
 
-        <!-- Message Us Page -->
+<!-- Message Us Page -->
 <section id="message-us-page" class="bg-gradient-to-r from-blue-100 to-blue-300 p-10 rounded-lg mx-8 my-10">
     <h2 class="text-2xl font-bold mb-6">Message Us</h2>
         <div class="flex flex-col md:flex-row gap-8">
 
             <!-- FORM KIRI -->
-            <form class="w-full md:w-1/2"
-                onsubmit="return validateForm()">
+            <form id="messageForm"
+                class="w-full md:w-1/2"
+                onsubmit="return validateForm(event)">
+
 
                 <!-- Nama -->
                 <div class="flex items-center mb-4">
